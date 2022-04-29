@@ -10,12 +10,12 @@ public class MarkdownParseTest {
 
     @Test
     public void addition() {
-        assertEquals(3, 1 + 1);
+        assertEquals(2, 1 + 1);
     }
 
     @Test public void newTests5() throws IOException {
         String content = Files.readString(Path.of("test-file5.md"));
-        assertEquals(List.of("pasdfasdage.com"), MarkdownParse.getLinks(content));
+        assertEquals(List.of("page.com"), MarkdownParse.getLinks(content));
     }
 
 
